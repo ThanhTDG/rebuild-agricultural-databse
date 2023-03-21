@@ -1,0 +1,639 @@
+{
+	"tables": {
+		"c2581f44-f25d-48d5-9ad3-f1cd1c3cfce3": {
+			"id": "c2581f44-f25d-48d5-9ad3-f1cd1c3cfce3",
+			"visible": true,
+			"name": "user",
+			"desc": "Thông tin người dùng trong hệ thống nông nghiệp",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "e0d84130-857e-431d-ba22-dca163056b98",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "1eadbe4d-07c0-4133-bc77-3e4f4a0413a4",
+					"name": "username",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "71a182ba-a2ab-454d-8e7d-c2755061006d",
+					"name": "password",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "71f3281f-dc2a-4b40-9938-c31a842631c7",
+					"name": "avatar_url",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "f7614d0b-6cf1-4aef-8be4-14a6b18ac282",
+					"name": "role",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "0918ba02-073e-4f8d-97ee-4cdf5efa3e51",
+					"name": "token",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "e0b3b165-a787-4d10-83d6-2431cef59848",
+					"name": "address",
+					"datatype": "83003619-dac9-4297-84f8-01ce7d89388a",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "942bb2c8-c875-4b3f-8b22-2fb6c630a748",
+					"name": "facebook_id",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "1f95b055-2dd0-45d9-bc82-1613bc51b6a1",
+					"name": "personal_info",
+					"datatype": "027a0bb5-f557-4d86-9649-617d35235c2a",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Thông tin một cá nhân",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": "",
+					"pattern": true
+				},
+				{
+					"id": "429c1d2e-b71c-46c8-b252-1f788261d911",
+					"name": "income",
+					"datatype": "4597ec63-2f4f-46c9-8120-8d43f91b072c",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "7de22131-2262-496e-b7ec-1742be93c276",
+					"name": "bio",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Mô tả ngắn của tài khoản",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "42c29831-1ef0-4493-b8ff-21c5c8ac294e",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "40639f6b-9a61-413c-9a45-6635057be70d",
+							"colid": "e0d84130-857e-431d-ba22-dca163056b98"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"collation": "",
+			"others": "",
+			"autoIndexId": true
+		},
+		"027a0bb5-f557-4d86-9649-617d35235c2a": {
+			"id": "027a0bb5-f557-4d86-9649-617d35235c2a",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "55ab9228-2393-419d-bec5-8ccea69a0843",
+					"name": "fist_name",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Tên",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "303269d6-792a-4b35-8b77-d2f0cb1d82ab",
+					"name": "last_name",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": "",
+					"validation": "Họ và tên đệm"
+				},
+				{
+					"id": "0bf3e75f-9449-4588-8e63-fa0bfc8e7c1b",
+					"name": "gender",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Giới tính",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "d3d552ef-bf15-425f-80a4-c9bcde3e704b",
+					"name": "date_of_birth",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "1254201b-20b7-4009-a64a-f4c10a452f22",
+					"name": "cic_number",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "mã căn cước công dân",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "e0bc9809-f710-4401-8abd-dc7491d77c2b",
+					"name": "level_of_tech",
+					"datatype": "double",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "fc7c978e-6b05-492d-8524-84fd935c9ce6",
+					"name": "level_of_education",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Trình độ học vấn",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "11c40a25-e23d-4da4-8401-e6ce32878aec",
+					"name": "zalo_id",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2f8e27c9-70f2-4d9e-ba27-65897df8fc34",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"83003619-dac9-4297-84f8-01ce7d89388a": {
+			"id": "83003619-dac9-4297-84f8-01ce7d89388a",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "6238ce8c-f40b-4029-bcc0-ca3bdafd97e0",
+					"name": "province",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "-Thành phố trực thuộc trung ương\n-Tỉnh",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "2ee5b0f2-60f4-4dfa-9ee3-afb17e734aac",
+					"name": "district",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "-Quận\n-Thành phố thuộc TPTTTƯ\n-Thành phố thuộc tỉnh\n-Thị xã\n-Huyện",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "033b43de-b6a1-4e7b-9658-f49f9b9dc696",
+					"name": "ward",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "-Phường\n-Thị trấn\n-Xã",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "0a9e571a-c320-4cdc-a309-76862424c665",
+					"name": "street",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Số nhà và tên đường",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "80d521ef-b373-4968-9293-80eea2dc199b",
+					"name": "location",
+					"datatype": "9525128b-6180-49f7-aa8d-b425aa6d7dcc",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "Địa điểm trên bản đồ dựa theo địa chỉ",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "875be4d1-1668-4eeb-a633-6fb8662f20f2",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"9525128b-6180-49f7-aa8d-b425aa6d7dcc": {
+			"id": "9525128b-6180-49f7-aa8d-b425aa6d7dcc",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "b98afa25-3517-4d21-88da-0678248a3556",
+					"name": "latidute",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Vĩ độ (vd: xích đạo)",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "b93f633a-82a7-4873-85f9-603fff679b3a",
+					"name": "longitude",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "Kinh độ ( Cực bắc -> cực nam)",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "17340ba8-c941-443d-aab2-d419b09d39c0",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"4597ec63-2f4f-46c9-8120-8d43f91b072c": {
+			"id": "4597ec63-2f4f-46c9-8120-8d43f91b072c",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "19e24677-de43-4fd3-9dc0-4204a803ffc8",
+					"name": "tax",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "mã số thuế - (... không biết)",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "42fcad2b-40a0-4db4-9ae5-dcc63e89cb45",
+					"name": "gdp",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "- Không rõ làm  gì",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "0415e33a-b112-4b65-b715-8f178a0130a7",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		}
+	},
+	"relations": {},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"activeDiagram": "7ae22315-b646-448d-b6d4-66a47ab49902",
+		"desc": "",
+		"name": "test",
+		"id": "fd67d0e2-21a7-4a6f-a50f-cc4593a367b1",
+		"path": "",
+		"type": "MONGODB",
+		"version": 1,
+		"keysgraphics": true,
+		"linegraphics": "detailed",
+		"zoom": 100,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"background": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 6,
+			"minor": 1,
+			"extra": 0
+		},
+		"def_tabletype": "na",
+		"def_collation": "",
+		"def_charset": "",
+		"def_coltopk": true,
+		"def_rowformat": "na",
+		"reversed": true,
+		"def_others": "",
+		"lastSaved": "3/21/2023",
+		"embeddedInParentsIsDisplayed": true,
+		"schemaContainerIsDisplayed": false,
+		"cardinalityIsDisplayed": false,
+		"estimatedSizeIsDisplayed": false,
+		"writeFileParam": false,
+		"currentDisplayMode": "metadata"
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"7ae22315-b646-448d-b6d4-66a47ab49902": {
+			"id": "7ae22315-b646-448d-b6d4-66a47ab49902",
+			"lineColor": "#f9e79f",
+			"description": "",
+			"diagramItems": {
+				"c2581f44-f25d-48d5-9ad3-f1cd1c3cfce3": {
+					"referencedItemId": "c2581f44-f25d-48d5-9ad3-f1cd1c3cfce3",
+					"x": 344,
+					"y": 102,
+					"gHeight": 530,
+					"gWidth": 236,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"027a0bb5-f557-4d86-9649-617d35235c2a": {
+					"referencedItemId": "027a0bb5-f557-4d86-9649-617d35235c2a",
+					"x": 200,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"83003619-dac9-4297-84f8-01ce7d89388a": {
+					"referencedItemId": "83003619-dac9-4297-84f8-01ce7d89388a",
+					"x": 200,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"9525128b-6180-49f7-aa8d-b425aa6d7dcc": {
+					"referencedItemId": "9525128b-6180-49f7-aa8d-b425aa6d7dcc",
+					"x": 200,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"4597ec63-2f4f-46c9-8120-8d43f91b072c": {
+					"referencedItemId": "4597ec63-2f4f-46c9-8120-8d43f91b072c",
+					"x": 200,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				}
+			},
+			"isOpen": true,
+			"main": true,
+			"name": "Main Diagram",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1.1,
+			"background": "#222222",
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd"
+		}
+	},
+	"order": [],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
